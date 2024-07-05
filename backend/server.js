@@ -30,8 +30,8 @@ app.use('/api/auth', authRoutes);
 app.use('/api/room', roomRoutes);
 
 app.get('/', (req, res) => {
-  res.json({name: hello});
-})
+  res.json({ name: 'hello' });
+});
 
 let answer = '';
 let total = 0;
@@ -119,4 +119,3 @@ io.on('connection', (socket) => {
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
-module.exports = { users };
