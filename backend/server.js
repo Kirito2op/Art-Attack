@@ -29,6 +29,10 @@ app.use('/api/auth', authRoutes);
 
 app.use('/api/room', roomRoutes);
 
+app.get('/', (req, res) => {
+  res.json({name: hello});
+})
+
 let answer = '';
 let total = 0;
 let currentHead;
