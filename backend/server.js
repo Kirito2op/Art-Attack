@@ -104,7 +104,7 @@ io.on('connection', (socket) => {
           }
           total = users[roomId].length - 1;
   
-          setTimeout(() => runRound(index + 1), 5000);
+          setTimeout(() => runRound(index + 1), 60000);
         }
         else{
           let end = users[roomId];
